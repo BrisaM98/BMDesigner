@@ -73,11 +73,6 @@ center{
     padding-bottom: 10px;
 }
 
-#footer {
-    margin-top: 2%;
-    bottom: 2%;
-    color: rgb(164, 92, 205);
-}
 #box{
      
 }
@@ -109,4 +104,20 @@ center{
 #imgInter{
         display:flex; /* Permite alinear imágenes en fila */
         gap: 20px; /* Espacio entre imágenes */
+}
+
+
+#footer {
+    margin-top: 2%;
+    bottom: 2%;
+    color: rgb(164, 92, 205);
+}
+/* Estilos para el footer */
+.footer {
+    margin-left:50px;
+    margin-right:50px;
+    color: #4a0a7e;             /* Texto blanco */
+    padding: 20px 0;         /* Espaciado superior e inferior */
+    width: 100%;             /* Asegura que ocupe todo el ancho */
+    position: relative;      /* Para poder colocar el contenido correctamente */
 }
