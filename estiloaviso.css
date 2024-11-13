@@ -1,0 +1,147 @@
+/* Reset de márgenes y bordes */
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20 px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #c51ba077;
+    color: #42033a;
+  }
+  
+  /* Menú superior */
+  header {
+    background-color: #20001b;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para la sección de Aviso de Privacidad */
+  .aviso-privacidad {
+    background-image: url(https://i.pinimg.com/originals/2f/f1/61/2ff16197bcdb6251ee28373048a2c313.gif);
+    padding: 80px 80px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111111;
+  }
+  
+  h2 {
+    color: #26002b;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #0066ccec;
+    text-decoration: none;
+ }
+
+ .container{
+    text-align: justify;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #edc1ffd5;
+
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #20001b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-container p {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
