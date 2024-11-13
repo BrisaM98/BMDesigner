@@ -1,4 +1,4 @@
- #portada{
+#portada{
     background-image: url("Gorillazfondo2.PNG");
     width:90%;
     height:25%;
@@ -24,8 +24,23 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(https://marketplace.canva.com/EAFjvluV7Wo/2/0/1600w/canva-fondo-de-pantalla-gradiente-rosa-y-celeste-pastel-h_F-FdyBGSk.jpg);
+    background-repeat: no-repeat;
     background-size:cover;
+    background-position: center center;
+}
 
+.a2{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: -webkit-center;
+    margin-top: 2%;
+    bottom: 2%;
+    font-size: 17px;
+    color: rgb(86, 42, 112);
 }
 
 a{
@@ -38,7 +53,7 @@ a{
 ul {
     list-style-type: none;
     margin: 0;
-    /*padding: 0;*/
+   /*padding: 0;*/
     overflow: hidden;
     background-color: #333;
 }
@@ -116,8 +131,8 @@ center{
 .footer {
     margin-left:50px;
     margin-right:50px;
-    color: #4a0a7e;             /* Texto blanco */
-    padding: 20px 0;         /* Espaciado superior e inferior */
-    width: 100%;             /* Asegura que ocupe todo el ancho */
-    position: relative;      /* Para poder colocar el contenido correctamente */
+    color: #4a0a7e;             
+    padding: 20px 0;         
+    width: 100%;            
+    position: relative;     
 }
