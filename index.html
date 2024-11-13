@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="stylesheet" href="CSS/estilo.css"/>
         <link rel="stylesheet" href="styles.css"> 
         <link rel="icon" href="icon/favicon-32x32.png" type="image/x-icon">
-        <script src="script.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8943JQTD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-0Y8943JQTD');
-        </script>
+        
         <style>
             .centrar {
                 display: block;
@@ -30,38 +23,29 @@
           gtag('config', 'G-0Y8943JQTD');
         </script>
     <body>
-        <!-- Ventana emergente de aviso de cookies -->
-    <div class="cookie-popup" id="cookiePopup">
-        <div class="cookie-popup-content">
-            <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra 
-            política de privacidad y el uso de cookies.</p>
-            <button id="acceptButton" class="accept-btn">Aceptar</button>
-        </div>
-    </div>
-        
         <div id="class">
-        <img id="portada" src="PortadaBM.png"/>
+        <img id="portada" src="Imagenes/PortadaBM.png"/>
         </div>
-
         <div class="espaciado"> </div>
-
         <div id="menu">
             <ul>
-                <li><a href="Conocenos.html">¿Quiénes somos?</a></li>
+                <li><a href="index.html">¿Quiénes somos?</a></li>
                 <li><a href="Catalogo.html">Cátalogo</a></li>
                 <li><a href="Testimonios.html">Testimonios</a></li>
                 <li><a href="Contactanos.html">Contactanos</a></li>
             </ul>
         </div>
-        <div id="content"></div>
-        
-       <div id="footer">
+        <div id="content">
+
+        </div>
+
+        <div id="footer">
             <div id="imagenesIcono" id="imgInter">
                     <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">
-                        <img src="Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
+                        <img src="CSS/Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
                     </a>
                     <a href="https://www.instagram.com/bm.designer98/" target="_blank">
-                        <img src="Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
+                        <img src="CSS/Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
                     </a>
             </div>
             <div class="footer-content">
@@ -69,6 +53,17 @@
                 <center><p>&copy; 2024 BM. Todos los derechos reservados.</p></center>
             </div>
         </div>
+    
+          <!-- Ventana emergente de aviso de cookies en la parte inferior -->
+        <div id="cookie-overlay" class="cookie-overlay"></div> <!-- Bloquea la pantalla -->
+        <div id="cookie-banner" class="cookie-banner">
+            <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra <span class="resaltar">Política de Cookies</span></p>
+            <button id="accept-btn" class="accept-btn">Aceptar</button>
+            <button id="reject-btn" class="reject-btn">Rechazar</button>
+        </div>
+
+        <!-- Scripts -->
         <script src="script.js"></script>
+
     </body>
 </html>
