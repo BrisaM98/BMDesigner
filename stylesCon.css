@@ -12,6 +12,11 @@ body {
   color: #333;
 }
 
+a {
+  color: #0066ccec;
+  text-decoration: none;
+}
+
 /* Menú superior */
 header {
   background-color: #333;
