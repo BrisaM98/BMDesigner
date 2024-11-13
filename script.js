@@ -1,18 +1,30 @@
-// Obtener el popup y el botón de aceptación
-const cookiePopup = document.getElementById('cookiePopup');
-const acceptButton = document.getElementById('acceptButton');
+// Obtener el banner, los botones y el overlay
+const cookieBanner = document.getElementById('cookie-banner');
+const cookieOverlay = document.getElementById('cookie-overlay');
+const acceptButton = document.getElementById('accept-btn');
+const rejectButton = document.getElementById('reject-btn');
 
-// Comprobar si el usuario ya ha aceptado las cookies
-if (!localStorage.getItem('cookiesAccepted')) {
-    // Si no se ha almacenado la aceptación, mostrar el popup
-    cookiePopup.style.display = 'flex';
+// Comprobar si ya se ha aceptado el aviso previamente
+if (!localStorage.getItem('cookieAccepted')) {
+  // Mostrar el banner y el overlay
+  setTimeout(() => {
+    cookieBanner.classList.add('show');  // Mostrar el banner con animación
+    cookieOverlay.style.display = 'block';  // Mostrar el overlay bloqueante
+  }, 100); // Añadimos un pequeño retraso para que la animación de desvanecimiento funcione
 }
 
-// Manejar el evento de clic en el botón de aceptar
+// Función para ocultar el banner (aceptar cookies)
 acceptButton.addEventListener('click', function() {
-    // Al hacer clic en Aceptar, ocultar el popup
-    cookiePopup.style.display = 'none';
-    
-    // Guardar que el usuario aceptó las cookies en localStorage
-    localStorage.setItem('cookiesAccepted', 'true');
+  cookieBanner.classList.remove('show'); // Animación de desvanecimiento
+  cookieOverlay.style.display = 'none'; // Ocultar el overlay
+  // Guardar que el usuario aceptó el aviso en el almacenamiento local
+  localStorage.setItem('cookieAccepted', 'true');
+});
+
+// Función para ocultar el banner (rechazar cookies)
+rejectButton.addEventListener('click', function() {
+  cookieBanner.classList.remove('show'); // Animación de desvanecimiento
+  cookieOverlay.style.display = 'none'; // Ocultar el overlay
+  // No se guarda nada en localStorage si el usuario rechaza
+  localStorage.removeItem('cookieAccepted');
 });
