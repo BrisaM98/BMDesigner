@@ -1,0 +1,159 @@
+/* Reset de márgenes y bordes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #401bc577;
+  color: #333;
+}
+
+/* Menú superior */
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para la sección de contacto */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url(https://marketplace.canva.com/EAFjvluV7Wo/2/0/1600w/canva-fondo-de-pantalla-gradiente-rosa-y-celeste-pastel-h_F-FdyBGSk.jpg);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 40px;
+  color:#de5792;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.contact-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info input,
+.contact-info textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-info button {
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-info button:hover {
+  background-color: #555;
+}
+
+.contact-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
