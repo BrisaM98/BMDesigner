@@ -1,68 +1,284 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <link rel="stylesheet" href="estilo.css"/>
-        <link rel="icon" href="icon/favicon-32x32.png" type="image/x-icon">
-        <style>
-            .centrar {
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8943JQTD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-0Y8943JQTD');
-        </script>
-    </head>
-     
-    <body>
-        <div id="class">
-        <img id="portada" src="PortadaBM.png"/>
-        </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="estiloCat.css">
+  <link rel="icon" href="icon/favicon-32x32.png" type="image/x-icon">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8943JQTD"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+   
+     gtag('config', 'G-0Y8943JQTD');
+   </script>
+</head>
 
-        <div class="espaciado"> </div>
+<body>
+  <!-- Menú Superior -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="LogoBM_Blanco.png" alt="Imagen de contacto" style="width: 60px; height: auto;">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Conocenos.html">¿Quiénes somos?</a></li>
+        <li><a href="Catalogo.html">Cátalogo</a></li>
+        <li><a href="Contact.html">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Conocenos.html">¿Quiénes somos?</a></li>
-                <li><a href="Testimonios.html">Testimonios</a></li>
-                <li><a href="Contactanos.html">Contactanos</a></li>
-            </ul>
-        </div>
+  <!-- Ilustraciones -->
+  <section class="aviso-privacidad">
+        <div class="container">
         
-        <div id="content">
-            <div title>
-            <h2>Catalogo</h2>
-            </div>
-            <div id="box2">
-                <div id="info">
-                    <br> <p>Ilustraciones</p>  
-                    <br> <p>Animaciones 2D</p>
-                    <br><p>Modelado 3D</p>
-                    <br><p>Edición de video</p>
+            <center><h1>Ilustraciones</h1></center>
+            
+            <section class="section">
+                <!-- Carrusel -->
+                <div class="carrusel-container">
+                    <div class="carrusel">
+                        <div class="imagen">
+                            <img src="MaterialCarrusel/Ilustraciones/Octoling Boy.png" alt="Imagen 1" data-text="Vectorizado en Adobe Ilustrador">
+                            <div class="imagen-titulo">Octoling boy, Splatoon 3</div>
+                        </div>
+                        <div class="imagen">
+                            <img src="MaterialCarrusel/Ilustraciones/HBF_InklingOctoling.png" alt="Imagen 2" data-text="Ilustración realizada en Adobe Ilustrador.">
+                            <div class="imagen-titulo">InklingGirl y Octoling Boy, cumpleaños</div>
+                        </div>
+                        <div class="imagen">
+                            <img src="MaterialCarrusel/Ilustraciones/FondoPueblo.jpg" alt="Imagen 3" data-text="Fondo de un pueblo para videojuego">
+                            <div class="imagen-titulo">Fondo pueblo</div>
+                        </div>
+                        <div class="imagen">
+                            <img src="MaterialCarrusel/Ilustraciones/Fondo2.png" alt="Imagen 4" data-text="Escena de fondo de batalla">
+                            <div class="imagen-titulo">Fondo batalla</div>
+                        </div>
+                        <div class="imagen">
+                            <img src="MaterialCarrusel/Ilustraciones/ItemsStickersLlaveros.png" alt="Imagen 5" data-text="Diseño de stickers y llaveros para videojuego">
+                            <div class="imagen-titulo">Stickers y llavero </div>
+                        </div>
+                    </div>
+
+                    <button class="boton boton-izquierda" onclick="moverCarrusel('izquierda')">&#10094;</button>
+                    <button class="boton boton-derecha" onclick="moverCarrusel('derecha')">&#10095;</button>
                 </div>
-                
-                <div id="imagen">
-                    <img src=" ">
+
+                <!-- Ventana de detalle de la imagen -->
+                <div class="detalle-imagen" id="detalle-imagen">
+                    <button class="cerrar" onclick="cerrarDetalle()">X</button>
+                    <img id="detalle-img" src="" alt="Imagen Detalle">
+                    <div class="texto" id="detalle-texto">
+                        <p></p>
+                    </div>
                 </div>
-            </div>
+                <!--Fin-->
+            </section>
+
+            <!-- Carrusel de Animaciones 2D con Video -->
+            <center><h1>Animaciones 2D</h1></center>
+
+            <section class="section">
+                <div class="carrusel-container carrusel-2d">
+                    <div class="carrusel carrusel-2d-inner">
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/1.19-2000_BrisaMora.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Gorillaz 19-2000</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/2.Coco.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Coco Cece</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/3.Mona.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Chica de pelo morado</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/4.VillanoW.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">"The Whisper" - Animación 2D</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/5.Bottle2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Botella</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/6.Animacion2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Zoé Renacer</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/7.Batalla2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Simulación de batalla</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/8.FondoPueblo2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Caminata</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/9.Pastel2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Pastel</div>
+                        </div>
+                        <div class="imagen">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/2D_Animaciones/10.TextoBrisa(Video).mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="imagen-titulo">Animación 2D - Nombre</div>
+                        </div>
+                    </div>
+                    <button class="boton boton-izquierda" onclick="moverCarrusel2D('izquierda')">&#10094;</button>
+                    <button class="boton boton-derecha" onclick="moverCarrusel2D('derecha')">&#10095;</button>
+                </div>
+            </section>
+            <!-- Fin -->
+
+            <!-- Carrusel de Modelados 3D con Video -->
+            <center><h1>Modelados 3D</h1></center>
+
+            <section class="section">
+                <div class="carrusel-container carrusel-3d">
+                <div class="carrusel carrusel-3d-inner">
+                    <div class="imagen">
+                        <img src="MaterialCarrusel/3D_Blender/1.Cafe.jpg" alt="Imagen 1" data-text="Modelado 3D en Blender">
+                        <div class="imagen-titulo">The Coffe Show - Blender</div>
+                    </div>
+                    <div class="imagen">
+                        <img src="MaterialCarrusel/3D_Blender/2.Mo.jpg" alt="Imagen 2" data-text="Modelado 3D en Blender">
+                        <div class="imagen-titulo">Mo de Wall-e - Blender <Wall-e></Wall-e></div>
+                    </div>
+                    <div class="imagen">
+                        <img src="MaterialCarrusel/3D_Blender/5.MonoDeNieve.png" alt="Imagen 2" data-text="Modelado 3D en Blender">
+                        <div class="imagen-titulo">Mono de nieve - Blender</div>
+                    </div>
+                    <div class="imagen">
+                        <img src="MaterialCarrusel/3D_Blender/8.EscenaCuento.png" alt="Imagen 2" data-text="Modelado 3D en Blender">
+                        <div class="imagen-titulo">Escena de cuento, Saperto - Blender</div>
+                    </div>
+                    <div class="imagen">
+                    <video autoplay muted loop controls>
+                    <source src="MaterialCarrusel/3D_Blender/Kitty.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                    </video>
+                    <div class="imagen-titulo">Escena 3D, Blender (Video)</div>
+                    </div>
+
+                    <div class="imagen">
+                        <img src="MaterialCarrusel/3D_Maya/1_179706_Render_F.png" alt="Imagen 1" data-text="Modelado 3D en Maya">
+                        <div class="imagen-titulo">Ajedrez - Realizado en Maya</div>
+                    </div>
+                    <div class="imagen">
+                        <video autoplay muted loop controls>
+                        <source src="MaterialCarrusel/3D_Maya/2_179706_Brisa_Mora.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                        </video>
+                        <div class="imagen-titulo">Animacion 3D en Maya</div>
+                    </div>
+                    <div class="imagen">
+                        <video autoplay muted loop controls>
+                        <source src="MaterialCarrusel/3D_Maya/3_Animacion_PFinal_179706.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                        </video>
+                        <div class="imagen-titulo">Animacion 3D en Maya</div>
+                    </div>
+                </div>
+                <button class="boton boton-izquierda" onclick="moverCarrusel3D('izquierda')">&#10094;</button>
+                <button class="boton boton-derecha" onclick="moverCarrusel3D('derecha')">&#10095;</button>
+                </div>
+            </section>
+            <!-- Fin -->
+
+            <!-- Carrusel de videos -->
+            <center><h1>Edición de video</h1></center>
+
+            <section class="section">
+                <div class="carrusel-container carrusel-videos">
+                    <div class="carrusel carrusel-videos-inner">
+                        <!-- Video 1 -->
+                        <div class="video-item">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/Ediciones/Promo_Giselle.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="video-titulo">Promocional Agosto “Giselle” </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="video-item">
+                            <video autoplay muted loop controls>
+                                <source src="MaterialCarrusel/Ediciones/Giselle_Promo2.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                            <div class="video-titulo">Promocional Noviembre “Giselle”</div>
+                        </div>
+                    </div>
+
+                    <!-- Botones para mover el carrusel -->
+                    <button class="boton boton-izquierda" onclick="moverCarruselVideos('izquierda')">&#10094;</button>
+                    <button class="boton boton-derecha" onclick="moverCarruselVideos('derecha')">&#10095;</button>
+                </div>
+            </section>
+            <!-- Fin -->
+
+
+
+
+
+
+
+
+
+
         </div>
-        
-        <div id="footer">
-            <div id="imagenesIcono" id="imgInter">
-                    <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">
-                        <img src="Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
-                    </a>
-                    <a href="https://www.instagram.com/bm.designer98/" target="_blank">
-                        <img src="Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
-                    </a>
-            </div>
+  </section>
+
+  <section class="aviso-privacidad">
+      
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+          <p>&copy; 2024 BM. Todos los derechos reservados.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/bm.designer98/" target="_blank">Instagram</a>
+          </div>
+          <a class="a2" href="aviso-de-privacidad.html"><span class="resaltar2">Aviso de privacidad</span> </a>
         </div>
+      </footer>
+      <script src="scriptCarrusel.js"></script>
     </body>
 </html>
