@@ -1,0 +1,462 @@
+/* Reset de márgenes y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20 px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #c51ba077;
+    color: #42033a;
+
+    font-family: Arial, sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Menú superior */
+  header {
+    background-color: #20001b;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para la sección de Aviso de Privacidad */
+  .aviso-privacidad {
+    background-image: url(https://i.pinimg.com/originals/25/6e/db/256edb9551b979d82194c5a454b3e126.gif);
+    padding: 80px 80px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111111;
+  }
+  
+  h2 {
+    color: #26002b;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #0066ccec;
+    text-decoration: none;
+ }
+ .resltar2{
+    color: #ffffff;
+  }
+ .container{
+    text-align: justify;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #edc1ffd5;
+
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #20001b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-container p {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+
+
+ /* Contenedor del carrusel */
+
+
+ .carrusel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+
+  /* Carrusel (lista de imágenes) */
+  .carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  /* Solo una imagen visible a la vez */
+  .carrusel .imagen {
+    min-width: 100%;
+    position: relative;
+  }
+
+  /* Imágenes del carrusel */
+  .carrusel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Título de las imágenes al pasar el mouse */
+  .imagen-titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 20px;
+    display: none; /* Inicialmente oculto */
+  }
+
+  /* Mostrar título al hacer hover sobre la imagen */
+  .imagen:hover .imagen-titulo {
+    display: block;
+  }
+
+  /* Botones de desplazamiento */
+  .boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .boton-izquierda {
+    left: 10px;
+  }
+
+  .boton-derecha {
+    right: 10px;
+  }
+
+  /* Contenido de la imagen y texto al hacer clic */
+  .detalle-imagen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    max-width: 800px;
+    width: 90%;
+    max-height: 80%;
+    overflow: auto;
+    border-radius: 10px;
+  }
+
+  .detalle-imagen img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  .detalle-imagen .texto {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .detalle-imagen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    max-width: 800px;
+    width: 90%;
+    max-height: 80%;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.detalle-imagen .texto {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+
+
+/* Estilo para el carrusel de Modelados 3D (incluyendo Video) */
+
+/* Estilos para el Carrusel 3D */
+.carrusel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .carrusel-3d-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrusel-3d-inner .imagen {
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .carrusel-3d-inner .imagen img, 
+  .carrusel-3d-inner .imagen video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que el contenido se ajuste bien al carrusel */
+  }
+  
+  .imagen-titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+  }
+  
+  .imagen:hover .imagen-titulo {
+    display: block; /* Muestra el título cuando el usuario pasa el ratón */
+  }
+  
+
+  
+/* Carrusel de Videos */
+/* Botones para mover el carrusel */
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #42033a85;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+}
+
+.boton-izquierda {
+    left: 30px;
+}
+
+.boton-derecha {
+    right: 30px;
+}
+
+/* Video */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Carrusel de Videos */
+.carrusel-videos {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /* Esto es necesario para ocultar el contenido que se desplaza fuera del carrusel */
+}
+
+.carrusel-videos-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Animación suave al mover el carrusel */
+}
+
+.video-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 18px;
+    display: none;
+}
+
+.video-item:hover .video-titulo {
+    display: block;
+}
+
+/* Añadido para centrar el contenido y asegurar que los botones se ubiquen correctamente */
+.carrusel-container {
+    position: relative;
+}
+
+
+/* Carrusel de animaciones 2D*/
+
+/* Estilos para el Carrusel 2D */
+.carrusel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carrusel-2d-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrusel-2d-inner .imagen {
+    min-width: 100%;
+    position: relative;
+}
+
+.carrusel-2d-inner .imagen video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que el contenido se ajuste bien al carrusel */
+}
+
+.imagen-titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.imagen:hover .imagen-titulo {
+    display: block; /* Muestra el título cuando el usuario pasa el ratón */
+}
