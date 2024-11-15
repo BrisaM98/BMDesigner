@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+<html>
+    <head> 
         <link rel="stylesheet" href="estilo.css"/>
-        <link rel="stylesheet" href="styles.css"> 
+      
         <link rel="icon" href="icon/favicon-32x32.png" type="image/x-icon">
         <style>
             .centrar {
@@ -13,6 +10,7 @@
                 margin: 0 auto;
             }
         </style>
+       
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8943JQTD"></script>
         <script>
@@ -22,17 +20,18 @@
         
           gtag('config', 'G-0Y8943JQTD');
         </script>
+        
     </head>
 
-    
     <body>
+        
         <div id="class">
-        <img id="portada" src="PortadaBM.png"/>
+        <img id="portada" src="Imagenes/PortadaBM.png"/>
         </div>
         <div class="espaciado"> </div>
         <div id="menu">
             <ul>
-                <li><a href="Conocenos.html">¿Quiénes somos?</a></li>
+                <li><a href="index.html">¿Quiénes somos?</a></li>
                 <li><a href="Catalogo.html">Cátalogo</a></li>
                 <li><a href="Testimonios.html">Testimonios</a></li>
                 <li><a href="Contactanos.html">Contactanos</a></li>
@@ -45,10 +44,10 @@
         <div id="footer">
             <div id="imagenesIcono" id="imgInter">
                     <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">
-                        <img src="Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
+                        <img src="CSS/Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
                     </a>
                     <a href="https://www.instagram.com/bm.designer98/" target="_blank">
-                        <img src="Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
+                        <img src="CSS/Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
                     </a>
             </div>
             <div class="footer-content">
@@ -58,16 +57,17 @@
             </div>
         </div>
     
-          <!-- Ventana emergente de aviso de cookies en la parte inferior -->
-        <div id="cookie-overlay" class="cookie-overlay"></div> <!-- Bloquea la pantalla -->
-        <div id="cookie-banner" class="cookie-banner">
-            <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, acepta nuestra <span class="resaltar">política de privacidad</span> y el uso de <span class="resaltar">cookies</span>.</p>
-            <button id="accept-btn" class="accept-btn">Aceptar</button>
-            <button id="reject-btn" class="reject-btn">Rechazar</button>
+        <!-- Capa oscura detrás de la ventana emergente -->
+        <div id="overlay"></div>
+
+        <!-- Ventana emergente de cookies -->
+        <div id="cookie-banner">
+            <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, acepta nuestra <span>política de privacidad</span> y el uso de <span>cookies</span>.</p>
+            <button id="accept-btn">Aceptar</button>
         </div>
 
         <!-- Scripts -->
-       
-       <script src="script.js"></script>
+        <script src="script.js" defer></script>
+
     </body>
 </html>
