@@ -1,90 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonios</title>
-        <link rel="stylesheet" href="estilo.css"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonios</title>
+        <link rel="stylesheet" href="estiloTes.css">
         <link rel="icon" href="icon/favicon-32x32.png" type="image/x-icon">
-        <style>
-            .centrar {
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
-        
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8943JQTD"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
         
-          gtag('config', 'G-0Y8943JQTD');
+            gtag('config', 'G-0Y8943JQTD');
         </script>
     </head>
-    
+
     <body>
-        <div id="class">
-         <img id="portada" src="PortadaBM.png"/>
-        </div>
-
-        <div class="espaciado"> </div>
-
-        <div id="menu">
-            <ul>
+    <!-- Menú Superior -->
+        <header>
+            <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="LogoBM_Blanco.png" alt="Imagen de contacto" style="width: 60px; height: auto;">
+                </a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Conocenos.html">¿Quiénes somos?</a></li>
                 <li><a href="Catalogo.html">Cátalogo</a></li>
-                <li><a href="Contactanos.html">Contactanos</a></li>
+                <li><a href="Contact.html">Contactanos</a></li>
             </ul>
-        </div>
-        
-        <div id="content">
-            <div title>
-            <h2>Testimonios</h2>
-            </div>
-            <div id="box2">
-                <div id="info">
+            </nav>
+        </header>
 
-                    <b><p>Ilustraciones realizadas en Adobe ilustrador: </p></b>
-                    
-                    <b><p>•	Perla F. 2018</p></b>
-                    <p>Elaboración de stickers para fiesta infantil.</p>
-
-                    <b><p>•	Alejandro P. 2020</p></b>
-                    <p>Comisión, Octoling boy. </p>
-
-                    <b><p>•	Perla F. 2022</p></b>
-                    <p>Elaboración de stickers para comunión.</p>
-                    <p>Elaboración de stickers para XV.</p>
-
-                    <b><p>•	Brisa M. 2022</p></b>
-                    <p>Comisión, Octoling boy y Inkling girl, cumpleaños.</p>
-
-                    <b><p>Animación 2D </p></b>
-                    
-                    <b><p>• Brisa M. 2021</p></b>
-                    <p> Gorillaz 19-2000 Lyrics (kinetic typography)</p></b>
-                    <p>Vectorizado en Adobe Ilustrador y animado en Adobe after Effects.</p>
-                   
-                    
+        <!-- Sección de Aviso de Privacidad y Cookies -->
+        <section class="aviso-privacidad">
+            <div class="container">
+                
+                <h2>Ilustraciones realizadas en Adobe ilustrador:</h2>
+            
+                <div id="content">
+                    <div id="box2">
+                        <div id="info">
+                            
+                            <h1><p>Alejandro F. 2020:</p></h1>
+                            <ul>
+                            <li>Comisión: Octoling Boy, Splatoon 3</li>
+                                <img src="MaterialCarrusel/Ilustraciones/Octoling Boy.png"  class="imagen-comision" width="640" height="360">
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div id="imagen">
-                    <img src=" ">
+
+                <div id="content">
+
+                    <div id="box2">
+                        <div id="info">
+                            
+                        <h1><p>Perla F. 2022:</p></h1>    
+                            <ul>
+                            <li>Elaboración de stickers para comunión.</li>
+                            <li>Elaboración de stickers para XV. </li>
+                            <img src="MaterialCarrusel/Testimonios/S2.png"  class="imagen-comision" width="150" height="150">
+                            <img src="MaterialCarrusel/Testimonios/S1.png"  class="imagen-comision" width="150" height="150">
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <div id="content">
+                    <div id="box2">
+                        <div id="info">
+                            
+                        <h1><p>Brisa M. 2022:</p></h1>       
+                            <ul>
+                            <li>Comisión, Octoling boy y Inkling girl, cumpleaños.</li>
+                            <img src="MaterialCarrusel/Ilustraciones/HBF_InklingOctoling.png"  class="imagen-comision" width="640" height="360">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+                <h2>Animación 2D</h2>
+            
+                <div id="content">
+                    <div id="box2">
+                        <div id="info">
+                            
+                            <h1><p>Brisa M. 2021:</p></h1>
+                            <ul>
+                            <li>Vectorizado en Adobe Ilustrador y animado en Adobe after Effects.</li>
+                            <iframe src="https://drive.google.com/file/d/1HT4PnoH4BNEThp61DZkPYhnOr8tiPmBL/preview" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                	
+                
+                <h2>Edicion de video</h2>
+                <div id="content">
+                    <div id="box2">
+                        <div id="info">
+                            
+                            <h1><p>Cultura UACJ, 2024</p></h1>
+                            <p>Se realizaron 2 ediciones como servicio social para:</p>
+                            <ul>
+                            <li>1.	Promocional Agosto “Giselle” para Compañía de Ballet UACJ con material de referencia.</li>
+                            <li>2.	Promocional Noviembre “Giselle” para Compañía de Ballet UACJ con material propio de la compañía de ballet.</li>
+                            </ul>
+
+                            <!-- Carrusel de videos -->
+                        <section class="section">
+                            <div class="carrusel-container carrusel-videos">
+                                <div class="carrusel carrusel-videos-inner">
+                                    <!-- Video 1 -->
+                                    <div class="video-item">
+                                        <video autoplay muted loop controls>
+                                            <source src="MaterialCarrusel/Ediciones/Promo_Giselle.mp4" type="video/mp4">
+                                            Tu navegador no soporta el formato de video.
+                                        </video>
+                                        <div class="video-titulo">Promocional Agosto “Giselle” </div>
+                                    </div>
+
+                                    <!-- Video 2 -->
+                                    <div class="video-item">
+                                        <video autoplay muted loop controls>
+                                            <source src="MaterialCarrusel/Ediciones/Giselle_Promo2.mp4" type="video/mp4">
+                                            Tu navegador no soporta el formato de video.
+                                        </video>
+                                        <div class="video-titulo">Promocional Noviembre “Giselle”</div>
+                                    </div>
+                                </div>
+
+                                <!-- Botones para mover el carrusel -->
+                                <button class="boton boton-izquierda" onclick="moverCarruselVideos('izquierda')">&#10094;</button>
+                                <button class="boton boton-derecha" onclick="moverCarruselVideos('derecha')">&#10095;</button>
+                            </div>
+                        </section>
+                        <!-- Fin -->
+                        </div>
+
+                        
+
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-        
-        <div id="footer">
-            <div id="imagenesIcono" id="imgInter">
-                    <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">
-                        <img src="Facebook.png" alt="Descripción de la imagen 1" width="50" height="50">
-                    </a>
-                    <a href="https://www.instagram.com/bm.designer98/" target="_blank">
-                        <img src="Instagram.png" alt="Descripción de la imagen 2" width="50" height="50">
-                    </a>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+            <p>&copy; 2024 BM. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/people/BM/61566566631911/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/bm.designer98/" target="_blank">Instagram</a>
             </div>
-        </div>
+            <a class="a2" href="aviso-de-privacidad.html"><span class="resaltar2">Aviso de privacidad</span> </a>
+            </div>
+      </footer>
+      <script src="scriptCarrusel.js"></script>
     </body>
 </html>
