@@ -72,3 +72,24 @@ function moverCarrusel2D(direccion) {
     // Desplazar el carrusel para mostrar solo la imagen o video actual
     carrusel2D.style.transform = `translateX(-${indiceImagen2D * 100}%)`;
 }
+
+//Carrusel Servicios
+
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;  // Si estamos al inicio, ir al final
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;  // Si estamos al final, volver al inicio
+  }
+
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
