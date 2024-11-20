@@ -460,3 +460,87 @@ video {
 .imagen:hover .imagen-titulo {
     display: block; /* Muestra el título cuando el usuario pasa el ratón */
 }
+
+/*Carousel Pagos y servicios*/
+
+/* Reseteo de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal del carrusel */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  /*max-width: 800px; */
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel y su alineación */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;  /* Transición suave entre imágenes */
+}
+
+/* Estilo de cada elemento del carrusel */
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 400px; /* Altura fija para las imágenes */
+}
+
+.carousel-item p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo de los botones de navegación */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2em;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%;
+  }
+  .carousel-item img {
+    height: 300px; /* Ajustar altura en pantallas más pequeñas */
+  }
+}
+
